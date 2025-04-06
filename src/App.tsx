@@ -11,7 +11,7 @@ function App() {
     <QueryClientProvider client={client}>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Navigate to={PATHS.Signup} />} />
+          <Route index element={<Navigate to={PATHS.Login} />} />
           <Route path={PATHS.Login} element={<Login />} />
           <Route path={PATHS.Signup} element={<Signup />} />
         </Routes>

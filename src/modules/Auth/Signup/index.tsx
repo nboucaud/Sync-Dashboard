@@ -1,5 +1,11 @@
+import { Navbar } from "../../../components";
+
 const Signup = () => {
-  return <div></div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default Signup;

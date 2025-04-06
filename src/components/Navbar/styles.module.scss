@@ -1,0 +1,20 @@
+.Navbar {
+  padding: 3rem;
+
+  .NavbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .NavbarBtn {
+    border-radius: 10px;
+    background-color: #c99a70;
+    border: none;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 2rem 3rem;
+    font-family: "Barlow", sans-serif;
+  }
+}

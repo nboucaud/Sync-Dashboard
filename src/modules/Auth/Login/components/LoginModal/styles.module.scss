@@ -1,0 +1,108 @@
+.LoginModal {
+  display: flex;
+  max-width: 120rem;
+  gap: 10rem;
+}
+
+.FillerWrapper {
+  border-radius: 24px;
+  padding: 7rem 6rem;
+  padding-bottom: 23rem;
+  width: 100%;
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../../../assets/signup-img.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+
+  .title {
+    font-size: 4rem;
+    line-height: 110%;
+    text-align: center;
+    color: #ffff;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    line-height: 120%;
+    text-align: center;
+    font-weight: 400;
+    color: #ffff;
+  }
+}
+
+.LoginForm {
+  width: 100%;
+
+  .loginTitle {
+    font-size: 5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  .loginSubtitle {
+    color: #969696;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      input {
+        padding: 1.7rem;
+        border-radius: 1rem;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #d9d9d9;
+        &:placeholder {
+          color: #9a9a9a;
+        }
+
+        &:not(:placeholder-shown) {
+          border-color: #9a5555 !important;
+          color: #232323;
+        }
+      }
+    }
+
+    button {
+      padding: 2rem;
+      font-size: 2rem;
+      color: #ffff;
+      background-color: #9a5555 !important;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.redirectSignup {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  a {
+    color: #9a5555;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
