@@ -1,0 +1,17 @@
+.NotFound {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  button {
+    padding: 2rem 6rem;
+    font-size: 2rem;
+    background-color: #313131;
+    border-radius: 1rem;
+    color: #ffff;
+    cursor: pointer;
+  }
+}
