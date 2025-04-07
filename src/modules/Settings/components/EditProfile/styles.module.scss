@@ -1,0 +1,62 @@
+.profilePic {
+  background-color: rgb(224, 224, 224);
+  max-width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  flex-basis: 15rem;
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.EditProfile {
+  display: flex;
+  gap: 5rem;
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 50rem);
+    row-gap: 2rem;
+    column-gap: 5rem;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+
+  label {
+    font-size: 2rem;
+  }
+
+  input,
+  textarea {
+    background-color: rgba(#ffff, 0.75);
+    border: 1px solid #dfeaf2;
+    outline: none;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    color: #718ebf;
+
+    resize: none;
+  }
+}
+
+.submitBtn {
+  grid-column: 2;
+  justify-self: end;
+  padding: 2rem 8rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: #d38181;
+  border: none;
+  outline: none;
+  color: #ffff;
+  cursor: pointer;
+}
