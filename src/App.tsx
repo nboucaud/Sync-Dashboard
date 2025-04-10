@@ -9,6 +9,9 @@ import Dashboard from "./modules/Dashboard";
 import { NotFoundRoute } from "./components/NotFoundRoute";
 import { PrivateLayout } from "./layouts/PrivateLayout";
 import Settings from "./modules/Settings";
+import Onboarding from "./modules/Onboarding";
+import { Waitlist } from "./modules/Auth/Waitlist";
+import { Confirmation } from "./modules/Auth/Confirmation";
 
 const client = new QueryClient();
 
@@ -20,6 +23,9 @@ function App() {
           <Route index element={<Navigate to={PATHS.Dashboard} />} />
           <Route path={PATHS.Login} element={<Login />} />
           <Route path={PATHS.Signup} element={<Signup />} />
+          <Route path={PATHS.Onboarding} element={<Onboarding />} />
+          <Route path={PATHS.Waitlist} element={<Waitlist />} />
+          <Route path={PATHS.Validation} element={<Confirmation />} />
           <Route
             path={PATHS.Dashboard}
             element={

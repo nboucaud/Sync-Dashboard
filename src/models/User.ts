@@ -12,4 +12,6 @@ export interface Profile {
   in_person_payments: boolean;
   online_payments: boolean;
   ai_voice_agent: boolean;
+  is_verified: boolean;
+  timer_expiration: string;
 }
