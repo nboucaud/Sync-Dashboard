@@ -3,7 +3,6 @@ import { supabase } from "../services/supabase";
 import { queryKeys } from "../queryKeys";
 import { User } from "@supabase/supabase-js";
 import { Profile } from "../models/User";
-
 export const useUser = () => {
   const { data, isLoading } = useQuery({
     queryKey: queryKeys.UserQueryKey,
