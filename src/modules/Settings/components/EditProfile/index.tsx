@@ -7,12 +7,15 @@ import { useUser } from "../../../../hooks/useUser";
 import styles from "./styles.module.scss";
 import { useForm } from "react-hook-form";
 import { useEditProfile } from "./hooks/useEditProfile";
+import { Loader } from "../../../../components";
 
 export const EditProfile = () => {
-  const { profile, user } = useUser();
+  const { profile, user, isLoading } = useUser();
   const { register, handleSubmit, setValue } = useForm();
   const { editProfileMutation } = useEditProfile();
   const options = useMemo(() => countryList().getData(), []);
+
+  if (isLoading) return <Loader />;
 
   if (!user || !profile) return null;
   const matchingCountryResult = options.find((result) => result.value === profile.country);

@@ -1,0 +1,46 @@
+.dropdownContainer {
+  display: flex;
+  gap: 3.5rem;
+
+  & > * {
+    flex-grow: 1;
+  }
+}
+
+.Preferences {
+  .title {
+    margin-bottom: 2rem;
+    display: block;
+  }
+  margin-top: 5rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.saveBtn {
+  align-self: flex-end;
+  padding: 2rem 8rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background-color: #d38181;
+}
+
+.PreferencesContainer {
+  display: flex;
+  flex-direction: column;
+}

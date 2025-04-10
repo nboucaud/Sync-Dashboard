@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ActiveTabs, EditProfile } from "./components";
+import { ActiveTabs, EditProfile, Preferences, Security } from "./components";
 import { SETTINGS_TABS } from "./utils";
 import styles from "./styles.module.scss";
 
@@ -11,6 +11,8 @@ const Settings = () => {
     <div className={styles.Settings}>
       <ActiveTabs activeTab={activeTab} onSelectActiveTab={handleSetActiveTab} />
       {activeTab === SETTINGS_TABS.EditProfile && <EditProfile />}
+      {activeTab === SETTINGS_TABS.Preferences && <Preferences />}
+      {activeTab === SETTINGS_TABS.Security && <Security />}
     </div>
   );
 };

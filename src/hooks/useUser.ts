@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "../services/supabase";
 import { queryKeys } from "../queryKeys";
+import { User } from "@supabase/supabase-js";
+import { Profile } from "../models/User";
 
 export const useUser = () => {
   const { data, isLoading } = useQuery({
@@ -17,7 +19,7 @@ export const useUser = () => {
 
       if (profileError) throw new Error(profileError.message);
 
-      return { user, profile };
+      return { user, profile } as { user: User; profile: Profile };
     },
     retry: false,
   });

@@ -17,18 +17,18 @@ function App() {
     <QueryClientProvider client={client}>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Navigate to={PATHS.Login} />} />
+          <Route index element={<Navigate to={PATHS.Dashboard} />} />
           <Route path={PATHS.Login} element={<Login />} />
           <Route path={PATHS.Signup} element={<Signup />} />
-          <Route path={PATHS.Dashboard} element={<PrivateLayout />}>
-            <Route
-              index
-              element={
-                <ProtectPrivateLayout>
-                  <Dashboard />
-                </ProtectPrivateLayout>
-              }
-            />
+          <Route
+            path={PATHS.Dashboard}
+            element={
+              <ProtectPrivateLayout>
+                <PrivateLayout />
+              </ProtectPrivateLayout>
+            }
+          >
+            <Route index element={<Dashboard />} />
 
             <Route path={PATHS.Settings} element={<Settings />} />
           </Route>
